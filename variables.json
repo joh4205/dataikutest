@@ -1,4 +1,4 @@
 {
-  "snowflake_warehouse": "DIAMOND_LABS_DEV_WH_ADHOC",
+  "snowflake_warehouse": "DIAMOND_LABS_DEV_WH_CONSUMER_FR",
   "snowflake_role": "DIAMOND_LABS_DEV_UCA_CONSUMER_FR"
 }
