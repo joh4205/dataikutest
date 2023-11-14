@@ -67,6 +67,8 @@
     },
     "Model creation": {
       "color": "#ee874a"
-    }
+    },
+    "origin:sql_import": {},
+    "Test_SSO": {}
   }
 }
