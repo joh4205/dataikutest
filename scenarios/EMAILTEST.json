@@ -3,19 +3,19 @@
   "name": "email-test",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "E0196103"
-    },
-    "lastModifiedOn": 1702043240473,
-    "extendedProperties": {}
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "E0196103"
     },
     "lastModifiedOn": 1702043355824,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "E0196103"
+    },
+    "lastModifiedOn": 1702043606437,
     "extendedProperties": {}
   },
   "checklists": {
@@ -83,6 +83,37 @@
           "refreshHiveMetastore": true,
           "handleWarningsAs": "WARNING",
           "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "report12789f748bec3b44e52b10b5163fede8",
+        "type": "send_report",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "SMTP_AMER",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "recipient": "mohamed.bencheikh@sanofi.com",
+              "sendAsHTML": false,
+              "attachments": [],
+              "messageSource": "INLINE",
+              "templateFormat": "FREEMARKER",
+              "templateName": "default.ftl",
+              "message": "Hello,\n\ntesting email"
+            }
+          }
         }
       }
     ]
