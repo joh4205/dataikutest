@@ -3,11 +3,11 @@
   "name": "email-test",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "E0196103"
     },
-    "lastModifiedOn": 1702043182872,
+    "lastModifiedOn": 1702043240473,
     "extendedProperties": {}
   },
   "versionTag": {
@@ -57,7 +57,35 @@
     }
   ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_0_true_d_Test",
+        "type": "build_flowitem",
+        "name": "build dataset Test",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "Test"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
