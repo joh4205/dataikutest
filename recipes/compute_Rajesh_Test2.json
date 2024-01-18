@@ -1,0 +1,60 @@
+{
+  "type": "CustomCode_api-connect",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_A_role": {
+      "items": [
+        {
+          "ref": "web_new_customers",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "api_output": {
+      "items": [
+        {
+          "ref": "Rajesh_Test2",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nm54797"
+    },
+    "lastModifiedOn": 1705605965864,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "nm54797"
+    },
+    "lastModifiedOn": 1705605965864,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
