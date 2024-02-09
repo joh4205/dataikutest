@@ -1,5 +1,5 @@
 {
-  "type": "Filesystem",
+  "type": "S3",
   "managed": true,
   "featureGroup": false,
   "formatType": "csv",
@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "E0196103"
+      "login": "fr08720"
     },
-    "lastModifiedOn": 1699538182657,
+    "lastModifiedOn": 1707490741017,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -78,8 +78,11 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/Test",
+    "bucket": "cld-aws-bucket-dataiku-amer-prod",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreTableName": "Test",
+    "connection": "Global_Admin_DKU",
+    "path": "/dataiku_AMER/${projectKey}/Test",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -99,7 +102,7 @@
       {"name":"pages_visited","type":"double"},
       {"name":"campain","type":"boolean"}
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
