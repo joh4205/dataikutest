@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "E0196103"
     },
-    "lastModifiedOn": 1709734864851,
+    "lastModifiedOn": 1709734873763,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -89,8 +89,14 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"customer_id","type":"string"},
+      {"name":"ip","type":"string"},
+      {"name":"pages_visited","type":"double"},
+      {"name":"campain","type":"boolean"},
+      {"name":"revenue","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
