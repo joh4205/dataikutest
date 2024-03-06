@@ -69,6 +69,7 @@
       "color": "#ee874a"
     },
     "origin:sql_import": {},
-    "Test_SSO": {}
+    "Test_SSO": {},
+    "recipe-editor": {}
   }
 }
