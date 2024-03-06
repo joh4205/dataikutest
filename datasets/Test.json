@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "fr08720"
+      "login": "E0196103"
     },
-    "lastModifiedOn": 1707490741017,
+    "lastModifiedOn": 1709739288699,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -102,7 +102,7 @@
       {"name":"pages_visited","type":"double"},
       {"name":"campain","type":"boolean"}
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
