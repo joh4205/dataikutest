@@ -7,16 +7,17 @@
     },
     "buildOnSave": true,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "R_markdown"
     }
   },
   "name": "rmarkdown report_johann",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "fr08720"
     },
-    "lastModifiedOn": 1710857928880,
+    "lastModifiedOn": 1710857957066,
     "extendedProperties": {}
   },
   "creationTag": {
