@@ -1,0 +1,35 @@
+{
+  "params": {
+    "viewFormat": "HTML_DOCUMENT",
+    "snapshotFormats": {
+      "PDF_DOCUMENT": true,
+      "HTML_DOCUMENT": true
+    },
+    "buildOnSave": true,
+    "envSelection": {
+      "envMode": "INHERIT"
+    }
+  },
+  "name": "rmarkdown report_johann",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "fr08720"
+    },
+    "lastModifiedOn": 1710857344251,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "fr08720"
+    },
+    "lastModifiedOn": 1710857344251,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
