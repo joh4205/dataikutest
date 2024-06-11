@@ -11,8 +11,51 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "oykMSvUZ",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Hourly",
+        "startingFrom": "2024-06-11",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 37,
+        "hour": 16,
+        "timezone": "SERVER",
+        "lastUpdate": 1718116791520
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "SMTP_AMER",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "recipient": "johann.brisseau@sanofi.com",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "xuFm4orA",
+      "name": "Johann BRISSEAU",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
