@@ -29,7 +29,7 @@
         "minute": 37,
         "hour": 16,
         "timezone": "SERVER",
-        "lastUpdate": 1718116791520
+        "lastUpdate": 1718117051674
       }
     }
   ],
@@ -52,7 +52,7 @@
       "id": "xuFm4orA",
       "name": "Johann BRISSEAU",
       "runConditionEnabled": true,
-      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "runCondition": "outcome \u003d\u003d \u0027SUCCESS\u0027",
       "phase": "END"
     }
   ],
